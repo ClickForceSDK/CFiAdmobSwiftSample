@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner, origin: CGPoint(x: (self.view.frame.size.width - 320) / 2, y: self.view.frame.height-50))
+        
+        bannerView = GADBannerView.init(adSize: kGADAdSizeBanner, origin: CGPoint(x: (self.view.frame.size.width - 320) / 2, y: self.view.frame.height-50))
         self.view.addSubview(bannerView)
         
         bannerView.adUnitID = "ca-app-pub-7236340530869760/5572068733"
